@@ -1,0 +1,80 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.cowin-bg-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #161625;
+  display: flex;
+  flex-direction: column;
+}
+
+.cowin-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logo-section {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.logo-image {
+  height: 40px;
+  width: 40px;
+  margin: 12px;
+}
+
+.logo-content {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: bold;
+  color: #2cc6c6;
+  padding-left: 2px;
+  margin-top: 20px;
+}
+
+.cowin-heading {
+  font-family: 'Roboto';
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  padding-left: 12px;
+  margin-top: 20px;
+}
+
+.vaccination-coverage-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.vaccination-by-gender-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.vaccination-by-age-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loader-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

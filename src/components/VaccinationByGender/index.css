@@ -1,0 +1,12 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.vaccination-by-gender-bg-container {
+  width: 90%;
+  background-color: #1c1c2b;
+  padding: 20px;
+  margin-top: 20px;
+}

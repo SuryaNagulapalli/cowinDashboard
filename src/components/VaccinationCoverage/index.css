@@ -1,0 +1,21 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.vaccination-coverage-bg-container {
+  width: 90%;
+  background-color: #1c1c2b;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.vaccination-coverage-heading {
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  color: #cbd5e1;
+  text-align: left;
+  margin-bottom: 12px;
+}
