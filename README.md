@@ -1,203 +1,194 @@
-In this project, let's build a **CoWIN Dashboard** by applying the concepts we have learned till now.
+Below is a sample `README.md` file for your **CoWIN Vaccination Dashboard** project. You can customize it further based on your preferences.
 
-### Refer to the images below:
+---
 
-<br/>
+# CoWIN Vaccination Dashboard
+
 <div style="text-align: center;">
     <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-output.gif" alt="" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
-<br/>
 
-**Failure View**
+---
 
-<br/>
-<div style="text-align: center;">
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Components](#components)
+5. [API Details](#api-details)
+6. [Installation](#installation)
+7. [Screenshots](#screenshots)
+8. [Live Demo](#live-demo)
+9. [Contributing](#contributing)
+10. [License](#license)
+11. [Author](#author)
+
+---
+
+## Introduction
+The **CoWIN Vaccination Dashboard** is a React-based web application that fetches COVID-19 vaccination data from a public API and visualizes it using **Recharts**. The dashboard provides insights into:
+- Vaccination coverage over the last 7 days.
+- Vaccination distribution by gender.
+- Vaccination distribution by age.
+
+The app is designed to handle loading states, successful data rendering, and error scenarios gracefully.
+
+---
+
+## Features
+- **Data Fetching**: Fetches vaccination data from a public API.
+- **Loading State**: Displays a spinner while data is being fetched.
+- **Data Visualization**:
+  - **BarChart**: Displays the last 7 days' vaccination data.
+  - **PieChart**: Displays vaccination data by gender.
+  - **PieChart**: Displays vaccination data by age.
+- **Error Handling**: Displays a failure view if the data fetching fails.
+- **Responsive Design**: Works seamlessly across different screen sizes.
+
+---
+
+## Technologies Used
+- **React**: For building the user interface.
+- **Recharts**: For rendering interactive charts (BarChart and PieChart).
+- **React Loader Spinner**: For displaying a loading spinner during data fetching.
+- **CSS**: For styling the components and layout.
+- **Fetch API**: For making HTTP requests to fetch vaccination data.
+
+---
+
+## Components
+1. **CowinDashboard**:
+   - The main component that fetches data and manages the loading, success, and error states.
+   - Renders the `VaccinationCoverage`, `VaccinationByGender`, and `VaccinationByAge` components.
+
+2. **VaccinationCoverage**:
+   - Displays the last 7 days' vaccination data using a **BarChart**.
+
+3. **VaccinationByGender**:
+   - Displays vaccination data by gender using a **PieChart**.
+
+4. **VaccinationByAge**:
+   - Displays vaccination data by age using a **PieChart**.
+
+5. **FailureView**:
+   - Displays an error message when the data fetching fails.
+
+6. **Loader**:
+   - Displays a spinner while the data is being fetched.
+
+---
+
+## API Details
+- **API Endpoint**: `https://apis.ccbp.in/covid-vaccination-data`
+- **Method**: `GET`
+- **Response Structure**:
+  ```json
+  {
+    "last_7_days_vaccination": [
+      {
+        "vaccine_date": "2023-10-01",
+        "dose_1": 1000,
+        "dose_2": 500
+      },
+      ...
+    ],
+    "vaccination_by_gender": [
+      {
+        "gender": "Male",
+        "count": 5000
+      },
+      {
+        "gender": "Female",
+        "count": 6000
+      },
+      {
+        "gender": "Others",
+        "count": 1000
+      }
+    ],
+    "vaccination_by_age": [
+      {
+        "age": "18-44",
+        "count": 3000
+      },
+      {
+        "age": "45-60",
+        "count": 4000
+      },
+      {
+        "age": "60+",
+        "count": 2000
+      }
+    ]
+  }
+  ```
+
+---
+
+## Installation
+Follow these steps to run the project locally:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/cowin-dashboard.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd cowin-dashboard
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**:
+   ```bash
+   npm start
+   ```
+
+5. **Open the app in your browser**:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## Screenshots
+1. **Loading State**:
+   ![Loading State](https://via.placeholder.com/400x200?text=Loading+Spinner)
+
+2. **Success State**:
+   <div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-output.gif" alt="" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+
+3. **Error State**:
+  <div style="text-align: center;">
     <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-failure-view-output.gif" alt="cowin-dashboard-failure-view-output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
-<br/>
 
-### Design Files
+---
 
-<details>
-<summary>Click to view</summary>
+## Live Demo
+[Click here to view the live demo](#) *(Replace with your live demo link)*
 
-- [Extra Large Devices (Size >= 1200px) - Success View](https://assets.ccbp.in/frontend/content/react-js/cowin-dashboard-xl-output.png)
-- [Extra Large Devices (Size >= 1200px) - Failure View](https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-xl-failure-view-output.png)
+---
 
-</details>
+## Contributing
+Contributions are welcome! If you find any issues or want to enhance the app, feel free to open a pull request.
 
-### Set Up Instructions
+---
 
-<details>
-<summary>Click to view</summary>
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+---
 
-### Completion Instructions
+## Author
+[Your Name](https://github.com/SuryaNagulapalli)
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+---
 
-The app must have the following functionalities
-
-- When the page is opened,
-  - An HTTP GET request should be made to **covidVaccinationDataApiUrl**
-  - **_loader_** should be displayed while the HTTP request is fetching the data
-  - After the data is fetched successfully, the response received should be displayed using different charts from `recharts`
-  - The last 7 days vaccination data should be displayed using the `BarChart` component from `recharts`
-  - The data for vaccination by gender and vaccination by age should be displayed as two different pie charts using the `PieChart` component from `recharts`
-  - If the HTTP GET request made is unsuccessful, then the [FailureView](https://assets.ccbp.in/frontend/react-js/api-failure-view.png) should be displayed
-
-</details>
-
-<details>
-
-<summary>API Requests & Responses</summary>
-<br/>
-
-**covidVaccinationDataApiUrl**
-
-#### API: `https://apis.ccbp.in/covid-vaccination-data`
-
-#### Method: `GET`
-
-#### Description:
-
-Returns a response containing the list of Products
-
-#### Success Response
-
-```json
-{
-  "last_7_days_vaccination": [
-    {
-      "vaccine_date": "30th Jul",
-      "dose_1": 3757930,
-      "dose_2": 1817805
-    },
-    ...
-  ],
-  "vaccination_by_age": [
-    {
-      "age": "18-44",
-      "count": 482792375
-    },
-    ...
-  ],
-  "vaccination_by_gender": [
-    {
-      "count": 4809680,
-      "gender": "Male"
-    },
-    ...
-  ]
-}
-```
-
-</details>
-
-<details>
-<summary>Components Structure</summary>
-
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-component-structure-breakdown.png" alt="component-breakdown-structure" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
-
-</details>
-
-<details>
-<summary>Implementation Files</summary>
-<br/>
-
-Use these files to complete the implementation:
-
-- `src/components/CowinDashboard/index.js`
-- `src/components/CowinDashboard/index.css`
-- `src/components/VaccinationCoverage/index.js`
-- `src/components/VaccinationCoverage/index.css`
-- `src/components/VaccinationByGender/index.js`
-- `src/components/VaccinationByGender/index.css`
-- `src/components/VaccinationByAge/index.js`
-- `src/components/VaccinationByAge/index.css`
-
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- Wrap the Loader component with an HTML container element and add the `data-testid` attribute value as `loader` to it
-
-  ```jsx
-  <div data-testid="loader">
-    <Loader type="ThreeDots" color="#ffffff" height={80} width={80} />
-  </div>
-  ```
-
-- Provide `width` and `height` to the respective chart component to make the charts visible on the page <br> For example:
-
-  ```jsx
-  <BarChart width={1000} height={300} />
-  ```
-
-  - Provide `width` and `height` as **number**
-
-  - Achieve this CoWIN Dashboard on desktop devices. You can try different charts provided by the `recharts` package with customized data
-
-</details>
-
-### Resources
-
-<details>
-<summary>Image URLs</summary>
-
-- [https://assets.ccbp.in/frontend/react-js/api-failure-view.png](https://assets.ccbp.in/frontend/react-js/api-failure-view.png) alt should be **failure view**
-- [https://assets.ccbp.in/frontend/react-js/cowin-logo.png](https://assets.ccbp.in/frontend/react-js/cowin-logo.png) alt should be **website logo**
-
-</details>
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #161625; width: 150px; padding: 10px; color: white">Hex: #161625</div>
-<div style="background-color: #2cc6c6; width: 150px; padding: 10px; color: black">Hex: #2cc6c6</div>
-<div style="background-color: #cbd5e1; width: 150px; padding: 10px; color: black">Hex: #cbd5e1</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #1c1c2b; width: 150px; padding: 10px; color: white">Hex: #1c1c2b</div>
-<div style="background-color: #2d87bb; width: 150px; padding: 10px; color: black">Hex: #2d87bb</div>
-<div style="background-color: #a3df9f; width: 150px; padding: 10px; color: black">Hex: #a3df9f</div>
-<div style="background-color: #64c2a6; width: 150px; padding: 10px; color: black">Hex: #64c2a6</div>
-<div style="background-color: #94a3b8; width: 150px; padding: 10px; color: black">Hex: #94a3b8</div>
-<div style="background-color: #f54394; width: 150px; padding: 10px; color: black">Hex: #f54394</div>
-<div style="background-color: #5a8dee; width: 150px; padding: 10px; color: black">Hex: #5a8dee</div>
-<div style="background-color: #2cc6c6; width: 150px; padding: 10px; color: black">Hex: #2cc6c6</div>
-<div style="background-color: #6c757d; width: 150px; padding: 10px; color: black">Hex: #6c757d</div>
-<div style="background-color: #5a8dee; width: 150px; padding: 10px; color: black">Hex: #5a8dee</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**.
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+Let me know if you need further assistance!
